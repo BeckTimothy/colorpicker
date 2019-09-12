@@ -14,9 +14,11 @@ function initColorPicker() {
 }
 
 function setColorPickerEventListeners(colorBox, rgb, pickerElements) {
-	for (let i = 0; i < pickerElements.length; i++) {
+	let pickerLen = pickerElements.length;
+	for (let i = 0; i < pickerLen; i++) {
 		pickerElements[i].addEventListener('change', () => {
-			setBoxColor(colorBox, rgb.red.value, rgb.green.value, rgb.blue.value);
+			let red =  rgb.red.value, green = rgb.green.value, blue = rgb.blue.value;
+			setBoxColor(colorBox, red, green, blue);
 		});
 	}
 }
