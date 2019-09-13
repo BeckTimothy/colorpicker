@@ -11,9 +11,12 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
-.center {
-	text-align: center;
-}
 .picker:hover {
 	cursor: pointer;
+}
+.text {
+	text-align: center;
+	font-weight: bold;
+	padding: 0px;
+	margin: 0px;
 }
