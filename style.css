@@ -17,8 +17,8 @@
 .text {
 	text-align: center;
 	font-weight: bold;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 }
 .picker-control {
 	display: flex;
@@ -29,4 +29,8 @@ span {
 }
 label {
 	min-width: 45px;
+}
+.rgbValReadout {
+	display: flex;
+	justify-content: space-around;
 }

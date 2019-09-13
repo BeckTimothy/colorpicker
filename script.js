@@ -33,8 +33,10 @@ function setDisplayValues(red, green, blue) {
 	let redVal = document.getElementById('redVal');
 	let greenVal = document.getElementById('greenVal');
 	let blueVal = document.getElementById('blueVal');
+	let rgbVal = document.getElementById('rgbValOutput');
 
 	redVal.innerText = red;
 	greenVal.innerText = green;
 	blueVal.innerText = blue;
+	rgbValOutput.innerText = `${red}, ${green}, ${blue}`;
 }
