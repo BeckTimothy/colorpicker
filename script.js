@@ -19,6 +19,7 @@ function setColorPickerEventListeners(colorBox, rgb, pickerElements) {
 		pickerElements[i].addEventListener('change', () => {
 			let red =  rgb.red.value, green = rgb.green.value, blue = rgb.blue.value;
 			setBoxColor(colorBox, red, green, blue);
+			setDisplayValues(red, green, blue);
 		});
 	}
 }
@@ -26,4 +27,14 @@ function setColorPickerEventListeners(colorBox, rgb, pickerElements) {
 function setBoxColor(colorBox, red, green, blue) {
 	rgbVal = [red, green, blue].join(',');
 	colorBox.style.backgroundColor = "rgb(" + rgbVal + ")";
+}
+
+function setDisplayValues(red, green, blue) {
+	let redVal = document.getElementById('redVal');
+	let greenVal = document.getElementById('greenVal');
+	let blueVal = document.getElementById('blueVal');
+
+	redVal.innerText = red;
+	greenVal.innerText = green;
+	blueVal.innerText = blue;
 }
